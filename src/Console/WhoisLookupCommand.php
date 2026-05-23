@@ -19,7 +19,7 @@ class WhoisLookupCommand extends Command
         $domain = $this->argument('domain');
         $ignoreCache = $this->option('no-cache');
 
-        $result = LaravelWhois::lookup($domain, ignoreCache: $ignoreCache);
+        $result = LaravelWhois::lookup($domain, ['ignoreCache' => $ignoreCache]);
 
         if ($this->option('json')) {
             $this->line($result->toJson(JSON_PRETTY_PRINT));

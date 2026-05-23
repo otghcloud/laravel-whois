@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Cache;
 use OTGH\LaravelWhois\Clients\RdapClient;
+use OTGH\LaravelWhois\LaravelWhois;
 use OTGH\LaravelWhois\Lookup\LookupManager;
 use OTGH\LaravelWhois\Parsers\ParsedResult;
 use Tests\Stubs\RdapClientStub;
@@ -42,4 +43,30 @@ it('ignores cache when withoutCache is used', function () {
 
     expect($result->servedFromCache)->toBeFalse();
     expect($result->domain)->toBe('example.com');
+});
+
+it('bypasses cache when ignoreCache is passed in helper options', function () {
+
+    Cache::shouldReceive('get')->never();
+    Cache::shouldReceive('put')->never();
+
+    $result = whois('example.invalid', [
+        'ignoreCache' => true,
+        'sources' => ['rdap'],
+    ]);
+
+    expect($result->errors)->toBeArray();
+});
+
+it('bypasses cache when ignoreCache is passed in lookup options', function () {
+
+    Cache::shouldReceive('get')->never();
+    Cache::shouldReceive('put')->never();
+
+    $result = LaravelWhois::lookup('example.invalid', [
+        'ignoreCache' => true,
+        'sources' => ['rdap'],
+    ]);
+
+    expect($result->errors)->toBeArray();
 });

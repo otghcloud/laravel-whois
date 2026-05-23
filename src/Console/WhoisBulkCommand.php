@@ -28,7 +28,7 @@ class WhoisBulkCommand extends Command
         $results = [];
 
         foreach ($domains as $domain) {
-            $result = LaravelWhois::lookup($domain, ignoreCache: $this->option('no-cache'));
+            $result = LaravelWhois::lookup($domain, ['ignoreCache' => $this->option('no-cache')]);
             $results[$domain] = $result->toArray();
 
             $this->info("{$domain}: ".($result->registered ? 'registered' : 'free'));
