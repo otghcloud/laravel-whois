@@ -1,0 +1,18 @@
+{
+  "single": [
+    "name server:\\s*([^\\s]+)",
+    "nserver:\\s*([^\\s]+)",
+    "nameserver:\\s*([^\\s]+)",
+    "dns:\\s*([^\\s]+)",
+    "host name:\\s*([^\\s]+)",
+    "host:\\s*([^\\s]+)",
+    "ns[0-9]*:\\s*([^\\s]+)"
+  ],
+
+  "block": [
+    "name servers?:\\s*(.+?)(?=\\n\\S|$)",
+    "nameservers?:\\s*(.+?)(?=\\n\\S|$)",
+    "nservers?:\\s*(.+?)(?=\\n\\S|$)",
+    "dns servers?:\\s*(.+?)(?=\\n\\S|$)"
+  ]
+}

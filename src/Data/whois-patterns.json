@@ -1,0 +1,79 @@
+{
+  "rate_limit": [
+    "query rate limit exceeded",
+    "number of allowed queries exceeded",
+    "you have exceeded your query limit",
+    "whois lookup limit exceeded",
+    "excessive queries",
+    "too many requests",
+    "please slow down",
+    "quota exceeded",
+    "requesting too quickly",
+    "request served too quickly",
+    "limit exceeded for your ip",
+    "your connection limit exceeded",
+    "your ip address has been temporarily blocked",
+    "you are querying too fast",
+    "please try again later"
+  ],
+
+  "invalid": [
+    "% this query returned 0 object",
+    "% you queried for .* but this server does not have",
+    "%error.*102.* invalid domain name",
+    "%error.*350.* invalid query syntax",
+    "invalid input",
+    "wrong top level domain name in query",
+    "domain : syntax error in specified domain name",
+    "syntax error",
+    "malformed request",
+    "request could not be understood",
+    "invalid query",
+    "invalid pattern",
+    "invalid character",
+    "not a valid domain",
+    "网域名称不合規定",
+    "域名格式錯誤",
+    "error: invalid"
+  ],
+
+  "reserved": [
+    "domain .* has been reserved",
+    "this domain name is reserved",
+    "reserved by.*",
+    "reserved.*registry",
+    "the registration of this domain is restricted",
+    "this domain cannot be registered"
+  ],
+
+  "taken": [
+    "creation date: .*",
+    "updated date: .*",
+    "registry expiry date: .*",
+    "domain status: .*",
+    "name server: .*",
+    "registrar: .*",
+    "registration date: .*",
+    "registered on: .*",
+    "domain is already registered",
+    "domain status"
+  ],
+
+  "available": [
+    "no match for .*",
+    "no such domain",
+    "no entries found",
+    "not found",
+    "domain not found",
+    "nothing found",
+    "object does not exist",
+    "domain status: free",
+    "status: available",
+    "domain is free",
+    "domain is available",
+    "domain unknown",
+    "query_status: 220 available",
+    "this domain name has not been registered",
+    "the domain was not found"
+  ]
+}

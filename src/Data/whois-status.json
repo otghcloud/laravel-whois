@@ -1,0 +1,10 @@
+{
+  "status": [
+    "domain status:\\s*([^\\s]+)",
+    "status:\\s*([^\\s]+)",
+    "state:\\s*([^\\s]+)",
+    "status code:\\s*([^\\s]+)",
+    "status:(.+)",
+    "domain status:(.+)"
+  ]
+}

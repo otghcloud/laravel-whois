@@ -1,0 +1,76 @@
+{
+  "available": [
+    "no match for",
+    "no entries found",
+    "not registered",
+    "no such domain",
+    "nothing found",
+    "domain not found",
+    "object not found",
+    "object does not exist",
+    "status: available",
+    "status: free",
+    "domain unknown",
+    "no data found",
+    "no information available",
+    "available for registration",
+    "noch nicht registriert",
+    "nenalezen",
+    "brak wyników",
+    "該域名尚未註冊",
+    "ไม่พบข้อมูลโดเมน",
+
+    "is free",
+    "domain is free",
+    "domain available",
+    "available",
+    "no records matching",
+    "no whois server is known",
+    "no match on whois database",
+
+    "no match domain",
+    "not found",
+    "not exist",
+    "no record found",
+    "domain name not known",
+
+    "no information found",
+    "no registration found",
+    "no whois information",
+
+    "status: inactive",
+    "available for purchase",
+
+    "нет данных",
+    "не зарегистрирован",
+    "домен не зарегистрирован",
+
+    "도메인이 없습니다",
+    "존재하지 않습니다",
+    "도메인 정보가 없습니다",
+
+    "このドメイン名は登録されていません",
+    "該域名未註冊",
+
+    "status: available for purchase",
+    "no zone file entries found",
+    "not in registry",
+    "not known in database",
+    "unknown domain",
+    "free",
+    "not assigned",
+    "is not registered",
+    "no object found",
+    "no objects found",
+    "no valid entries found",
+    "no domain records",
+    "domain not in database",
+    "domain is not registered",
+    "the queried object does not exist",
+
+    "domain does not exist",
+    "no such object",
+    "not in whois db",
+    "domain of this name does not exist"
+  ]
+}

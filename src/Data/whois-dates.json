@@ -1,0 +1,43 @@
+{
+  "created": [
+    "creation date:\\s*(.+)",
+    "created on:\\s*(.+)",
+    "created:\\s*(.+)",
+    "registered on:\\s*(.+)",
+    "domain registration date:\\s*(.+)",
+    "domain create date:\\s*(.+)",
+    "created date:\\s*(.+)",
+    "creation time:\\s*(.+)",
+    "registered:\\s*(.+)",
+    "registered time:\\s*(.+)",
+    "domain registered:\\s*(.+)",
+    "record created on:\\s*(.+)",
+    "creation datetime:\\s*(.+)",
+    "creation timestamp:\\s*(.+)"
+  ],
+
+  "updated": [
+    "updated date:\\s*(.+)",
+    "updated on:\\s*(.+)",
+    "last updated on:\\s*(.+)",
+    "last update:\\s*(.+)",
+    "last modified:\\s*(.+)",
+    "domain last updated date:\\s*(.+)",
+    "changed:\\s*(.+)",
+    "modification date:\\s*(.+)",
+    "last modified on:\\s*(.+)"
+  ],
+
+  "expiry": [
+    "expiry date:\\s*(.+)",
+    "expiration date:\\s*(.+)",
+    "registry expiry date:\\s*(.+)",
+    "registrar registration expiration date:\\s*(.+)",
+    "paid-till:\\s*(.+)",
+    "expires:\\s*(.+)",
+    "renewal date:\\s*(.+)",
+    "renew by:\\s*(.+)",
+    "expire date:\\s*(.+)",
+    "expires on:\\s*(.+)"
+  ]
+}
