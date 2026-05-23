@@ -10,12 +10,12 @@ if (! function_exists('whois')) {
      *
      * Example:
      *   whois('example.com');
-     *   whois('example.com', ignoreCache: true);
+     *   whois('example.com', ['ignoreCache' => true]);
      *
      * @return ParsedResult
      */
-    function whois(string $domain, bool $ignoreCache = false, array $options = [])
+    function whois(string $domain, array $options = [])
     {
-        return (new LaravelWhois)->lookup($domain, $options, $ignoreCache);
+        return LaravelWhois::lookup($domain, $options);
     }
 }
