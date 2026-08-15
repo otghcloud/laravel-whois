@@ -1,6 +1,6 @@
 {
   "description": "RDAP bootstrap file for Domain Name System registrations",
-  "publication": "2026-05-20T18:00:01Z",
+  "publication": "2026-07-23T02:00:03Z",
   "services": [
     [
       [
@@ -16,14 +16,6 @@
       ],
       [
         "http://rdap.nic.mg/"
-      ]
-    ],
-    [
-      [
-        "ng"
-      ],
-      [
-        "http://rdap.nic.net.ng/"
       ]
     ],
     [
@@ -890,15 +882,6 @@
     ],
     [
       [
-        "xn--55qw42g",
-        "xn--zfr164b"
-      ],
-      [
-        "https://rdap.conac.cn/"
-      ]
-    ],
-    [
-      [
         "crown"
       ],
       [
@@ -1095,6 +1078,7 @@
         "cheap",
         "church",
         "cipriani",
+        "circle",
         "citadel",
         "city",
         "claims",
@@ -1192,6 +1176,7 @@
         "gold",
         "golf",
         "goodyear",
+        "got",
         "graphics",
         "gratis",
         "green",
@@ -1235,6 +1220,7 @@
         "jewelry",
         "jio",
         "jll",
+        "jot",
         "juegos",
         "juniper",
         "kaufen",
@@ -1349,6 +1335,7 @@
         "rogers",
         "run",
         "rwe",
+        "safety",
         "sale",
         "salon",
         "sanofi",
@@ -1366,7 +1353,6 @@
         "shoes",
         "shopping",
         "show",
-        "sina",
         "singles",
         "ski",
         "soccer",
@@ -1439,7 +1425,6 @@
         "watch",
         "watches",
         "weber",
-        "weibo",
         "weir",
         "wine",
         "works",
@@ -1450,7 +1435,6 @@
         "xn--5su34j936bgsg",
         "xn--5tzm5g",
         "xn--6frz82g",
-        "xn--9krt00a",
         "xn--b4w605ferd",
         "xn--bck1b9a5dre4c",
         "xn--cck2b3b",
@@ -1533,6 +1517,20 @@
       ],
       [
         "https://rdap.mobile-registry.com/rdap/"
+      ]
+    ],
+    [
+      [
+        "sina",
+        "weibo",
+        "xn--55qw42g",
+        "xn--55qx5d",
+        "xn--9krt00a",
+        "xn--io0a7i",
+        "xn--zfr164b"
+      ],
+      [
+        "https://rdap.ngtld.cn/"
       ]
     ],
     [
@@ -2985,6 +2983,14 @@
     ],
     [
       [
+        "ng"
+      ],
+      [
+        "https://rdap.nic.net.ng/"
+      ]
+    ],
+    [
+      [
         "netbank"
       ],
       [
@@ -3277,14 +3283,6 @@
       ],
       [
         "https://rdap.nic.rugby/"
-      ]
-    ],
-    [
-      [
-        "safety"
-      ],
-      [
-        "https://rdap.nic.safety/"
       ]
     ],
     [
@@ -4105,14 +4103,6 @@
     ],
     [
       [
-        "circle"
-      ],
-      [
-        "https://rdap.nominet.uk/circle/"
-      ]
-    ],
-    [
-      [
         "cymru"
       ],
       [
@@ -4177,14 +4167,6 @@
     ],
     [
       [
-        "got"
-      ],
-      [
-        "https://rdap.nominet.uk/got/"
-      ]
-    ],
-    [
-      [
         "gucci"
       ],
       [
@@ -4229,14 +4211,6 @@
       ],
       [
         "https://rdap.nominet.uk/jobs/"
-      ]
-    ],
-    [
-      [
-        "jot"
-      ],
-      [
-        "https://rdap.nominet.uk/jot/"
       ]
     ],
     [
@@ -4734,11 +4708,22 @@
     ],
     [
       [
+        "click",
+        "country",
+        "diy",
         "feedback",
+        "food",
         "forum",
+        "hiv",
+        "lifestyle",
+        "living",
         "observer",
         "pid",
-        "realty"
+        "property",
+        "realty",
+        "sexy",
+        "trust",
+        "vana"
       ],
       [
         "https://rdap.registry.click/rdap/"
@@ -4767,6 +4752,14 @@
       ],
       [
         "https://rdap.registry.ec/"
+      ]
+    ],
+    [
+      [
+        "gift"
+      ],
+      [
+        "https://rdap.registry.gift/rdap/"
       ]
     ],
     [
@@ -4924,30 +4917,26 @@
     ],
     [
       [
-        "click",
-        "country",
-        "diy",
-        "food",
-        "gift",
-        "hiv",
-        "lifestyle",
-        "link",
-        "living",
-        "property",
-        "sexy",
-        "trust",
-        "vana"
-      ],
-      [
-        "https://rdap.tucowsregistry.net/rdap/"
-      ]
-    ],
-    [
-      [
         "xn--mxtq1m"
       ],
       [
         "https://rdap.twnic.tw/rdap/"
+      ]
+    ],
+    [
+      [
+        "tz"
+      ],
+      [
+        "https://rdap.tznic.or.tz/"
+      ]
+    ],
+    [
+      [
+        "link"
+      ],
+      [
+        "https://rdap.uniregistry.net/rdap/"
       ]
     ],
     [
@@ -5161,8 +5150,6 @@
     [
       [
         "xn--1qqw23a",
-        "xn--55qx5d",
-        "xn--io0a7i",
         "xn--xhq521b"
       ],
       [
@@ -5199,6 +5186,14 @@
       ],
       [
         "https://tld-rdap.verisign.com/verisign/v1/"
+      ]
+    ],
+    [
+      [
+        "web"
+      ],
+      [
+        "https://tld-rdap.verisign.com/web/v1/"
       ]
     ],
     [
@@ -5327,14 +5322,6 @@
       ],
       [
         "https://whois.sr/rdap/"
-      ]
-    ],
-    [
-      [
-        "tz"
-      ],
-      [
-        "https://whois.tznic.or.tz/rdap/"
       ]
     ],
     [
