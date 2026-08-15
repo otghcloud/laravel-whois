@@ -1,7 +1,7 @@
-[<img src="https://otgh-static-assets.s3.otgh.cloud/branding/logos/otgh_cloud_2024.png" width="200px" />](https://git.otgh.cloud/open-source/laravel/whois)
+[<img src="https://otgh-static-assets.s3.otgh.cloud/branding/logos/otgh_cloud_2024.png" width="200px" />](https://github.com/otghcloud/laravel-whois)
 
-[![pipeline status](https://git.otgh.cloud/open-source/laravel/whois/badges/main/pipeline.svg)](https://git.otgh.cloud/open-source/laravel/whois/-/commits/main)
-[![Latest Release](https://git.otgh.cloud/open-source/laravel/whois/-/badges/release.svg)](https://git.otgh.cloud/open-source/laravel/whois/-/releases)
+[![CI](https://github.com/otghcloud/laravel-whois/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/otghcloud/laravel-whois/actions/workflows/ci.yml)
+[![Latest Release](https://img.shields.io/github/v/release/otghcloud/laravel-whois?display_name=tag)](https://github.com/otghcloud/laravel-whois/releases)
 
 # Contributing
 

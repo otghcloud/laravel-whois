@@ -6,7 +6,7 @@
         "laravel",
         "laravel-whois"
     ],
-    "homepage": "https://git.otgh.cloud/open-source/laravel/whois",
+    "homepage": "https://github.com/otghcloud/laravel-whois",
     "license": "MIT",
     "authors": [
         {
