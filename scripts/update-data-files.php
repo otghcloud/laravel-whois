@@ -11,6 +11,7 @@
 declare(strict_types=1);
 
 $baseDir = dirname(__DIR__).'/src/Data/';
+$dryRun = in_array('--dry-run', $argv, true);
 
 $files = [
     'public-suffix-list.dat' => 'https://publicsuffix.org/list/public_suffix_list.dat',
@@ -20,6 +21,13 @@ $files = [
 
 echo "=== OTGH Laravel-Whois Data Updater ===\n\n";
 
+if ($dryRun) {
+    echo "Dry run: no files will be written.\n\n";
+}
+
+$failed = false;
+$updated = 0;
+
 foreach ($files as $filename => $url) {
     echo "Fetching: $filename\n";
     echo "Source:   $url\n";
@@ -27,7 +35,6 @@ foreach ($files as $filename => $url) {
     $target = $baseDir.$filename;
 
     try {
-        // Fetch remote content
         $context = stream_context_create([
             'http' => [
                 'timeout' => 20,
@@ -41,7 +48,6 @@ foreach ($files as $filename => $url) {
             throw new RuntimeException("Failed to fetch URL: $url");
         }
 
-        // Compare with existing file, if exists
         $hasChanged = true;
 
         if (file_exists($target)) {
@@ -51,21 +57,33 @@ foreach ($files as $filename => $url) {
             }
         }
 
-        // Overwrite only if changed
         if ($hasChanged) {
-            file_put_contents($target, $data);
-            echo "Updated: $filename\n";
+            if ($dryRun) {
+                echo "Would update: $filename\n";
+            } else {
+                if (file_put_contents($target, $data) === false) {
+                    throw new RuntimeException("Failed to write file: $target");
+                }
+
+                echo "Updated: $filename\n";
+            }
+
+            $updated++;
         } else {
             echo "No changes: $filename (skipped)\n";
         }
 
     } catch (Throwable $e) {
         echo "Error updating $filename: ".$e->getMessage()."\n";
-
-        continue;
+        $failed = true;
     }
 
     echo "\n";
 }
 
-echo "Data update complete.\n\n";
+if ($failed) {
+    echo "Data update failed.\n\n";
+    exit(1);
+}
+
+echo $updated === 0 ? "Data files are already current.\n\n" : "Data update complete.\n\n";

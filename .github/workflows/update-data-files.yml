@@ -1,0 +1,55 @@
+name: Update data files
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: update-data-files
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    name: Refresh upstream data
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.head.repo.full_name == github.repository
+    steps:
+      - name: Check out update branch
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.head_ref || 'main' }}
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.5'
+
+      - name: Update data files
+        run: php scripts/update-data-files.php
+
+      - name: Commit updated data files
+        env:
+          TARGET_BRANCH: ${{ github.event_name == 'pull_request' && github.head_ref || 'main' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if git diff --quiet -- src/Data; then
+            echo "Data files are already current."
+            exit 0
+          fi
+
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add src/Data
+          git commit -m "chore(data): Update WHOIS data files [skip-release]"
+          git push origin "HEAD:${TARGET_BRANCH}"
