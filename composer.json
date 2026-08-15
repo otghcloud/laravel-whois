@@ -1,6 +1,6 @@
 {
     "name": "otghcloud/laravel-whois",
-    "description": "Laravel package for providing WHOIS/RDAP access",
+    "description": "Laravel package for providing WHOIS/RDAP lookups",
     "keywords": [
         "otghcloud",
         "laravel",
