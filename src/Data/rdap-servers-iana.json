@@ -1,6 +1,6 @@
 {
   "description": "RDAP bootstrap file for Domain Name System registrations",
-  "publication": "2026-07-23T02:00:03Z",
+  "publication": "2026-10-28T22:00:04Z",
   "services": [
     [
       [
@@ -118,6 +118,15 @@
       ],
       [
         "https://rdap.aliregistry.cn/rdap/"
+      ]
+    ],
+    [
+      [
+        "bh",
+        "xn--mgbcpq6gpa1a"
+      ],
+      [
+        "https://rdap.bhregistry.bh/rdap/"
       ]
     ],
     [
@@ -674,6 +683,14 @@
     ],
     [
       [
+        "radio"
+      ],
+      [
+        "https://rdap.centralnic.com/radio/"
+      ]
+    ],
+    [
+      [
         "reit"
       ],
       [
@@ -1188,7 +1205,6 @@
         "hdfc",
         "hdfcbank",
         "healthcare",
-        "helsinki",
         "hermes",
         "hkt",
         "hockey",
@@ -1222,7 +1238,6 @@
         "jll",
         "jot",
         "juegos",
-        "juniper",
         "kaufen",
         "kerryhotels",
         "kerryproperties",
@@ -1342,6 +1357,7 @@
         "sarl",
         "saxo",
         "sbi",
+        "sc",
         "scholarships",
         "school",
         "schule",
@@ -3103,6 +3119,15 @@
     ],
     [
       [
+        "kr",
+        "xn--3e0b707e"
+      ],
+      [
+        "https://rdap.nic.or.kr/"
+      ]
+    ],
+    [
+      [
         "osaka"
       ],
       [
@@ -3243,14 +3268,6 @@
       ],
       [
         "https://rdap.nic.racing/"
-      ]
-    ],
-    [
-      [
-        "radio"
-      ],
-      [
-        "https://rdap.nic.radio/"
       ]
     ],
     [
